@@ -1,4 +1,4 @@
-NG Colour Lovers
+NG Colour Lovers: [LIVE DEMO](http://ng-colour-lovers.herokuapp.com/)
 ================
 
 A sample app built with AngularJS that utilizes the [ColourLovers API](http://www.colourlovers.com/api). 
