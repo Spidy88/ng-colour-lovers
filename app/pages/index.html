@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="ColourLovers">
+<head lang="en">
+    <base href="/">
+    <meta charset="UTF-8">
+    <title>Colour Lovers</title>
+    <link href="/css/vendors.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+<body ng-controller="AppCtrl as app" style="background-color: {{ app.Style.secondaryBackgroundColor }}; color: {{ app.Style.primaryTextColor }}">
+    <div class="jumbotron" style="background-color: {{ app.Style.primaryBackgroundColor }}; color: {{ app.Style.primaryAccentColor }}">
+        <div class="container">
+            <h1>Colour Lovers</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text-center">
+            <div class="btn-group btn-group-lg">
+                <button id="btnColors" type="button" class="btn btn-default" ng-class="{ 'btn-primary': app.resource == 'colors' }" ng-click="app.viewResource('colors')">Colors</button>
+                <button id="btnPalettes" type="button" class="btn btn-default" ng-class="{ 'btn-primary': app.resource == 'palettes' }" ng-click="app.viewResource('palettes')">Palettes</button>
+                <button id="btnPatterns" type="button" class="btn btn-default" ng-class="{ 'btn-primary': app.resource == 'patterns' }" ng-click="app.viewResource('patterns')">Patterns</button>
+            </div>
+        </div>
+
+        <div ng-view>
+
+        </div>
+    </div>
+
+    <script src="/js/vendors.js"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

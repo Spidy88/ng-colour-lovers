@@ -1,0 +1,27 @@
+{
+  "name": "ColourLovers",
+  "version": "0.0.0",
+  "description": "A fun website that interfaces to the Colour Lovers API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Ferraro",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^7.1.0",
+    "bower": "^1.3.12",
+    "path": "^0.4.9"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-bower-concat": "^0.4.0",
+    "grunt-sass": "^0.16.0",
+    "grunt-browserify": "^3.1.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-autoprefixer": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

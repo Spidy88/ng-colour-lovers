@@ -1,0 +1,10 @@
+<h3>{{ ctrl.resource }}</h3>
+<section>
+    <article class="cell pull-left col-lg-3 col-md-3 col-sm-4 col-xs-6" ng-repeat="resource in ctrl.resources">
+        <div class="resource" ng-click="ctrl.selectResource(resource)">
+            <div class="title">{{ resource.title }}</div>
+            <img class="image" ng-src="{{ resource.imageUrl }}" />
+        </div>
+    </article>
+    <div class="clearfix"></div>
+</section>
